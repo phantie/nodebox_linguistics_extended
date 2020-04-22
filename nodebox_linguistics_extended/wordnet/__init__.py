@@ -15,7 +15,7 @@ pywordnet_path = os.path.join(os.path.dirname(__file__), "wordnet2")
 os.environ["WNHOME"] = pywordnet_path
 
 import wordnet as wn
-import wntools
+import pwntools
 
 import re
 

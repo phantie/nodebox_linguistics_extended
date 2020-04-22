@@ -66,7 +66,7 @@ singular_rules = [
     ['(?i)([ti])a$' , '\\1um'],
     ['(?i)(n)ews$' , '\\1ews'],
     ['(?i)s$' , ''],
-];
+]
 
 singular_uninflected = ["bison", "bream", "breeches", "britches", "carp", "chassis", "clippers", "cod", "contretemps", "corps", "debris", "diabetes", "djinn", "eland", "elk", "flounder", "gallows", "graffiti", "headquarters", "herpes", "high-jinks", "homework", "innings", "jackanapes", "mackerel", "measles", "mews", "mumps", "news", "pincers", "pliers", "proceedings", "rabies", "salmon", "scissors", "series", "shears", "species", "swine", "trout", "tuna", "whiting", "wildebeest"]
 singular_uncountable = ["advice", "bread", "butter", "cheese", "electricity", "equipment", "fruit", "furniture", "garbage", "gravel", "happiness", "information", "ketchup", "knowledge", "love", "luggage", "mathematics", "mayonnaise", "meat", "mustard", "news", "progress", "research", "rice", "sand", "software", "understanding", "water"]
@@ -87,7 +87,6 @@ singular_irregular = {
     "atlases" : "atlas", 
     "beeves" : "beef", 
     "brethren" : "brother", 
-    "children" : "child", 
     "corpora" : "corpus", 
     "corpuses" : "corpus", 
     "kine" : "cow", 
@@ -123,7 +122,7 @@ plural_prepositions = ["about", "above", "across", "after", "among", "around", "
 def singular(word, custom={}):
 
     if word in custom.keys():
-		return custom[word]
+        return custom[word]
 
 	# Recursion of compound words (e.g. mothers-in-law). 
     if "-" in word:
